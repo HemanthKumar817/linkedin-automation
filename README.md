@@ -95,20 +95,25 @@ python main.py --generate-samples
 
 ## 🌐 Cloud Deployment
 
-### Deploy to Render.com (FREE - No Credit Card!)
+### Deploy to Railway.app (FREE - No Credit Card!)
 
-Deploy your automation to run 24/7:
+Deploy your automation to run 24/7 in just 3 minutes:
 
-```powershell
-.\deploy_to_render.ps1
-```
+**Quick Steps:**
+1. Go to: https://railway.app
+2. Sign in with GitHub
+3. Click "New Project" → "Deploy from GitHub repo"
+4. Select: `linkedin-automation`
+5. Add environment variables from `.env`
+6. Deploy! ✅
 
-**Then follow the instructions to:**
-1. Push to GitHub
-2. Deploy on Render.com (5 minutes!)
-3. Monitor logs at dashboard.render.com
+**See full guide:** `RAILWAY_DEPLOY.md`
 
-**See full guide:** `RENDER_DEPLOY.md`
+**Benefits:**
+- ✅ $5 free credit/month (~500 hours)
+- ✅ No credit card required
+- ✅ Auto-deploy on git push
+- ✅ Built-in monitoring
 
 ---
 
