@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.Python
+venv/
+ENV/
+env/
+.venv
+
+# Environment variables (configure in Render dashboard)
+.env
+.env.local
+.env.example
+
+# Database (Render handles data persistence)
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Logs (Render has built-in logging)
+*.log
+data/logs/
+logs/
+
+# Local PowerShell scripts (not needed on cloud)
+start_automation.ps1
+stop_automation.ps1
+check_status.ps1
+setup_task_scheduler.ps1
+setup.ps1
+automation.pid
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation (keep only essential)
+docs/
+SETUP_COMPLETE.md
+GEMINI_SETUP.md
+GEMINI_QUICK_START.md
+QUICKSTART.md
+
+# Data files
+data/scraped/
+data/temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LinkedIn API
+linkedin_credentials.json
+oauth_tokens.json

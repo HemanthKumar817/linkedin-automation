@@ -1,0 +1,30 @@
+# Core Dependencies - Only prebuilt wheels
+beautifulsoup4
+requests
+feedparser
+python-dateutil
+lxml
+
+# AI & Content Generation
+openai
+anthropic
+google-generativeai
+
+# Scheduling
+schedule
+pytz
+
+# Configuration
+python-dotenv
+pyyaml
+
+# Logging
+loguru
+
+# HTTP
+httpx
+
+# Utilities
+python-slugify
+tqdm
+colorama

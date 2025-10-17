@@ -1,0 +1,162 @@
+# Content sources configuration
+sources:
+  techcrunch:
+    name: "TechCrunch"
+    url: "https://www.techcrunch.com"
+    rss_feed: "https://techcrunch.com/feed/"
+    enabled: true
+    weight: 1.2  # Higher weight = more priority
+    categories: ["ai", "startups", "automation"]
+  
+  analytics_insight:
+    name: "Analytics Insight"
+    url: "https://www.analyticsinsight.net"
+    rss_feed: "https://www.analyticsinsight.net/feed/"
+    enabled: true
+    weight: 1.0
+    categories: ["ai", "data", "analytics"]
+  
+  business_insider:
+    name: "Business Insider AI"
+    url: "https://www.businessinsider.com/ai"
+    enabled: true
+    weight: 1.1
+    categories: ["ai", "business", "innovation"]
+  
+  weforum:
+    name: "World Economic Forum"
+    url: "https://www.weforum.org/topics/future-of-work"
+    enabled: true
+    weight: 1.3
+    categories: ["future-of-work", "jobs", "skills"]
+  
+  producthunt:
+    name: "Product Hunt"
+    url: "https://www.producthunt.com/newest"
+    enabled: true
+    weight: 0.9
+    categories: ["products", "tools", "innovation"]
+  
+  forbes:
+    name: "Forbes AI"
+    url: "https://www.forbes.com/ai"
+    enabled: true
+    weight: 1.1
+    categories: ["ai", "enterprise", "leadership"]
+
+# Topic categories and their importance
+topic_categories:
+  ai_tools:
+    name: "AI Tools and Their Uses"
+    keywords: ["AI tool", "ChatGPT", "automation", "productivity", "AI assistant"]
+    weight: 1.3
+    
+  job_market:
+    name: "Job Market and Future of Work"
+    keywords: ["jobs", "hiring", "remote work", "skills", "career", "employment"]
+    weight: 1.2
+    
+  ai_technology:
+    name: "Evolving AI Technologies"
+    keywords: ["machine learning", "deep learning", "LLM", "neural network", "AI breakthrough"]
+    weight: 1.1
+    
+  tech_innovation:
+    name: "Tech Innovations and Automation"
+    keywords: ["innovation", "startup", "technology", "automation", "digital transformation"]
+    weight: 1.0
+    
+  viral_insights:
+    name: "Viral Insights for Professionals"
+    keywords: ["trending", "viral", "insight", "professional", "creator"]
+    weight: 0.9
+
+# Posting schedule
+schedule:
+  default_time: "21:00"  # 9 PM
+  timezone: "America/New_York"
+  priority_days: ["Tuesday", "Wednesday", "Thursday"]
+  avoid_weekends: false
+  posts_per_day: 1
+
+# Content generation settings
+content:
+  post_length:
+    min: 100
+    max: 150
+    target: 125
+  
+  tone:
+    style: "professional, insightful, conversational"
+    avoid: ["clickbait", "sensational", "overly casual"]
+  
+  hashtags:
+    min: 3
+    max: 5
+    mix_ratio: 0.6  # 60% trending, 40% niche
+  
+  call_to_action:
+    enabled: true
+    examples:
+      - "What are your thoughts on this?"
+      - "How is this changing your industry?"
+      - "Have you tried this approach?"
+      - "What's your experience with this?"
+      - "Are you seeing similar trends?"
+
+# SEO optimization
+seo:
+  keyword_density:
+    min: 0.02
+    max: 0.05
+  
+  include_keywords: true
+  natural_placement: true
+  
+  common_keywords:
+    - "AI"
+    - "automation"
+    - "technology"
+    - "innovation"
+    - "future of work"
+    - "productivity"
+    - "digital transformation"
+
+# Engagement tracking
+engagement:
+  enabled: true
+  check_interval_hours: 6
+  
+  metrics:
+    - "likes"
+    - "comments"
+    - "shares"
+    - "impressions"
+  
+  thresholds:
+    excellent_likes: 100
+    good_likes: 50
+    minimum_likes: 10
+    excellent_comments: 10
+    good_comments: 5
+    minimum_comments: 2
+  
+  learning:
+    enabled: true
+    adjust_tone: true
+    adjust_topics: true
+    adjust_hashtags: true
+    review_period_days: 7
+
+# Rate limiting and safety
+safety:
+  max_posts_per_day: 2
+  min_hours_between_posts: 8
+  dry_run: false
+  verify_before_posting: true
+  
+  content_checks:
+    - "profanity"
+    - "spam_detection"
+    - "fact_verification"
+    - "duplicate_detection"
